@@ -2,7 +2,7 @@ FROM alpine:3.4
 
 MAINTAINER Mourad Maatoug <mr.maatoug@gmail.com>
 
-ENV FILEBEAT_VERSION 1.3.0
+ENV FILEBEAT_VERSION 1.0.1
 ENV GLIBC_VERSION 2.23-r3
 
 # Installing Glibc
