@@ -25,6 +25,6 @@ RUN apk --update add --virtual setup-tool wget && \
   rm -rf filebeat-${FILEBEAT_VERSION}-x86_64* && \
 	apk del setup-tool
 
-COPY filebeat.yml /filebeat/config
+ADD filebeat.yml /filebeat/config/
 
 ENTRYPOINT ["/filebeat/filebeat", "-e", "-c", "/filebeat/config/filebeat.yml"]
